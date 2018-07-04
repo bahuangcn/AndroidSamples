@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Samples</string>
+    <string name="btn_text_rv_page">RecyclerView Page</string>
 </resources>
