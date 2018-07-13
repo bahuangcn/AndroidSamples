@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Android Samples</string>
-    <string name="btn_text_rv_page">RecyclerView Page</string>
+
+    <!-- Title List -->
+    <string name="title_recycler_view_sample">RecyclerView Sample</string>
+
+    <!-- Main Page Navigation Button Text -->
+    <string name="btn_rv_page">RecyclerView Page</string>
+
+    <!-- Recycler View Sample Navigation Button Text-->
+    <string name="btn_show_data">ShowData</string>
+
 </resources>

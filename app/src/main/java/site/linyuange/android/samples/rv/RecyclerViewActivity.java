@@ -7,12 +7,13 @@ import android.databinding.DataBindingUtil;
 import site.linyuange.android.samples.R;
 import site.linyuange.android.samples.base.BaseActivity;
 import site.linyuange.android.samples.rv.fragment.RvSummaryFragment;
+import site.linyuange.android.samples.rv.fragment.ShowDataRvFragment;
 
 /**
  * Author: BaHuang
  * Date: 2018/7/4 11:08
  */
-public class RecyclerViewActivity extends BaseActivity {
+public class RecyclerViewActivity extends BaseActivity implements RvNavigation {
 
     public static void startInstance(Activity activity) {
         Intent intent = new Intent(activity, RecyclerViewActivity.class);
@@ -33,5 +34,10 @@ public class RecyclerViewActivity extends BaseActivity {
     @Override
     protected int getContainerViewId() {
         return R.id.container;
+    }
+
+    @Override
+    public void navToShowDataPage() {
+        addFragment(new ShowDataRvFragment());
     }
 }

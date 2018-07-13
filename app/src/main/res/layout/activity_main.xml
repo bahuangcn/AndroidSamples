@@ -21,7 +21,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
             android:onClick="@{()->navigator.navToRvPage()}"
-            android:text="@string/btn_text_rv_page"
+            android:text="@string/btn_rv_page"
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
