@@ -7,6 +7,7 @@ import android.databinding.DataBindingUtil;
 import site.linyuange.android.samples.R;
 import site.linyuange.android.samples.base.BaseActivity;
 import site.linyuange.android.samples.rv.fragment.RvSummaryFragment;
+import site.linyuange.android.samples.rv.fragment.SelectItemFragment;
 import site.linyuange.android.samples.rv.fragment.ShowDataRvFragment;
 
 /**
@@ -39,5 +40,10 @@ public class RecyclerViewActivity extends BaseActivity implements RvNavigation {
     @Override
     public void navToShowDataPage() {
         addFragment(new ShowDataRvFragment());
+    }
+
+    @Override
+    public void navToSelectItemPage() {
+        addFragment(new SelectItemFragment());
     }
 }

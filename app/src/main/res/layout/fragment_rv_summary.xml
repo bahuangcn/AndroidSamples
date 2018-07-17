@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -18,6 +19,13 @@
             style="@style/NavigationButton"
             android:onClick="@{()->navigation.navToShowDataPage()}"
             android:text="@string/btn_show_data" />
+
+        <Button
+            android:id="@+id/btn_select_item"
+            style="@style/NavigationButton"
+            android:onClick="@{()->navigation.navToSelectItemPage()}"
+            android:text="@string/btn_select_item"
+            app:layout_constraintTop_toBottomOf="@+id/btn_show_data" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

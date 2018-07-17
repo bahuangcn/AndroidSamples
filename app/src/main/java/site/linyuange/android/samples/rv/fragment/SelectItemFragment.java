@@ -10,13 +10,13 @@ import android.widget.LinearLayout;
 
 import site.linyuange.android.samples.R;
 import site.linyuange.android.samples.base.BaseFragment;
-import site.linyuange.android.samples.rv.adapter.ShowDataAdapter;
+import site.linyuange.android.samples.rv.adapter.SelectItemAdapter;
 
 /**
  * Author: BaHuang
- * Date: 2018/7/4 15:39
+ * Date: 2018/7/13 16:58
  */
-public class ShowDataRvFragment extends BaseFragment {
+public class SelectItemFragment extends BaseFragment {
 
     @Override
     protected int getLayoutRes() {
@@ -25,9 +25,9 @@ public class ShowDataRvFragment extends BaseFragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        RecyclerView rvShowData = view.findViewById(R.id.recycler_view);
-        rvShowData.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayout.VERTICAL, false));
-        rvShowData.setHasFixedSize(true);
-        rvShowData.setAdapter(new ShowDataAdapter());
+        RecyclerView rvSelectItem = view.findViewById(R.id.recycler_view);
+        rvSelectItem.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayout.VERTICAL, false));
+        rvSelectItem.setHasFixedSize(true);
+        rvSelectItem.setAdapter(new SelectItemAdapter());
     }
 }

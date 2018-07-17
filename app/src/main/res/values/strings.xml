@@ -9,5 +9,6 @@
 
     <!-- Recycler View Sample Navigation Button Text-->
     <string name="btn_show_data">ShowData</string>
+    <string name="btn_select_item">Select Item</string>
 
 </resources>

@@ -6,4 +6,6 @@ package site.linyuange.android.samples.rv;
  */
 public interface RvNavigation {
     void navToShowDataPage();
+
+    void navToSelectItemPage();
 }
