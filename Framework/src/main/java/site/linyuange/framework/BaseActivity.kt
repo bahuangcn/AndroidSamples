@@ -22,6 +22,8 @@ abstract class BaseActivity : AppCompatActivity() {
         if (layoutRes > NO_LAYOUT_RES) {
             initContentView(layoutRes)
         }
+        initView()
+        initData()
     }
 
     protected open fun preHandleSavedInstanceState() {}
@@ -35,4 +37,6 @@ abstract class BaseActivity : AppCompatActivity() {
     @LayoutRes
     abstract fun getLayoutRes(): Int
 
+    open fun initView() {}
+    open fun initData() {}
 }
